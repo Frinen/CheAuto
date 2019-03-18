@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto", "CheAuto\CheAuto.csproj", "{553EF1E9-2956-4C58-9457-538B409413DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Models", "CheAuto.Models\CheAuto.Models.csproj", "{5EE5845B-1294-4A76-A53B-58F88FD331C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{553EF1E9-2956-4C58-9457-538B409413DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553EF1E9-2956-4C58-9457-538B409413DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553EF1E9-2956-4C58-9457-538B409413DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553EF1E9-2956-4C58-9457-538B409413DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE5845B-1294-4A76-A53B-58F88FD331C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE5845B-1294-4A76-A53B-58F88FD331C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE5845B-1294-4A76-A53B-58F88FD331C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE5845B-1294-4A76-A53B-58F88FD331C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75BF5C82-F16D-4CD6-AF82-953BA8D56E0D}
+	EndGlobalSection
+EndGlobal

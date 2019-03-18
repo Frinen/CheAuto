@@ -1,7 +1,5 @@
 ﻿using CheAuto.Models.Schema.Common;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CheAuto.Models.Schema
 {
@@ -12,5 +10,6 @@ namespace CheAuto.Models.Schema
         public double Power { get; set; }
         public double Torque { get; set; }
 
+        IEnumerable<CarComplectation> CarComplectations { get; set; }
     }
 }

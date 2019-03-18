@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CheAuto.Models
+﻿namespace CheAuto.Models
 {
     public class Class1
     {

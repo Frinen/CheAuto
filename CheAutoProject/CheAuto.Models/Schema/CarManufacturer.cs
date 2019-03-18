@@ -1,7 +1,6 @@
 ﻿using CheAuto.Models.Schema.Common;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CheAuto.Models.Schema
 {
@@ -9,5 +8,7 @@ namespace CheAuto.Models.Schema
     {
         public Guid CountryId { get; set; }
         public Country Country { get; set; }
+
+        public IEnumerable<CarModel> CarModels { get; set; }
     }
 }

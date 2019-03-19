@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using CheAuto.Models.Enums;
-using CheAuto.Models.Schema.Common;
 
-namespace CheAuto.Models.Schema
+namespace CheAuto.Models.Dto
 {
-    public class CarComplectation : NamedEntity
+    public class CarComplectationDto : NamedDto
     {
         public int Price { get; set; }
         public DriveType DriveType { get; set; }
@@ -14,9 +14,6 @@ namespace CheAuto.Models.Schema
         public int PassengerCount { get; set; }
         public double LoadCapacity { get; set; }
 
-        public Engine Engine { get; set; }
-        public Guid EngineId { get; set; }
-
-        public IEnumerable<CarModel> CarModels { get; set; }
+        public EngineDto Engine { get; set; }
     }
 }

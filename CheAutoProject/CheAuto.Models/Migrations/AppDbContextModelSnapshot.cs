@@ -70,7 +70,7 @@ namespace CheAuto.Models.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<int>("PassangerCount");
+                    b.Property<int>("PassengerCount");
 
                     b.Property<int>("Price");
 

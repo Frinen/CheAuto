@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using CheAuto.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CheAuto.Controllers
 {

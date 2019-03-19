@@ -1,5 +1,5 @@
-﻿using CheAuto.Models.Schema.Common;
-using System;
+﻿using System;
+using CheAuto.Models.Schema.Common;
 
 namespace CheAuto.Models.Schema
 {

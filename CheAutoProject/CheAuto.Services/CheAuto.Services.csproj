@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CheAuto.Models.Dto\CheAuto.Models.Dto.csproj" />
+    <ProjectReference Include="..\CheAuto.Models\CheAuto.Models.csproj" />
+    <ProjectReference Include="..\CheAuto.Services.Interfaces\CheAuto.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

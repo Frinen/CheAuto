@@ -16,13 +16,32 @@ namespace CheAuto.Services
                 cfg.CreateMap<BodyType, BodyTypeDto>();
                 cfg.CreateMap<BodyTypeDto, BodyType>();
 
-                cfg.CreateMap<CarComplectationDto, CarComplectation>();
-                cfg.CreateMap<CarComplectation, CarComplectationDto>();
+                cfg.CreateMap<CarComplectationReadDto, CarComplectation>();
+                cfg.CreateMap<CarComplectation, CarComplectationReadDto>();
 
                 cfg.CreateMap<CarManufacturerUpdateDto, CarManufacturer>();
                 cfg.CreateMap<CarManufacturer, CarManufacturerUpdateDto>();
                 cfg.CreateMap<CarManufacturerReadDto, CarManufacturer>();
                 cfg.CreateMap<CarManufacturer, CarManufacturerReadDto>();
+
+                cfg.CreateMap<CarModelReadDto, CarModel>();
+                cfg.CreateMap<CarModel, CarModelReadDto>();
+
+                cfg.CreateMap<CarModelUpdateDto, CarModel>();
+                cfg.CreateMap<CarModel, CarModelUpdateDto>();
+
+                cfg.CreateMap<CountryDto, Country>();
+                cfg.CreateMap<Country, CountryDto>();
+
+                cfg.CreateMap<DealerDto, Dealer>();
+                cfg.CreateMap<Dealer, DealerDto>();
+
+                cfg.CreateMap<EngineDto, Engine>();
+                cfg.CreateMap<Engine, EngineDto>();
+
+                cfg.CreateMap<DealerDto, Dealer>();
+                cfg.CreateMap<Dealer, DealerDto>();
+
             });
         }
     }

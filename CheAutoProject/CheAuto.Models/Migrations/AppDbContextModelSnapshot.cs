@@ -52,7 +52,7 @@ namespace CheAuto.Models.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BodyType");
+                    b.ToTable("BodyTypes");
                 });
 
             modelBuilder.Entity("CheAuto.Models.Schema.CarComplectation", b =>
@@ -78,7 +78,7 @@ namespace CheAuto.Models.Migrations
 
                     b.HasIndex("EngineId");
 
-                    b.ToTable("CaeComplectations");
+                    b.ToTable("CarComplectations");
                 });
 
             modelBuilder.Entity("CheAuto.Models.Schema.CarManufacturer", b =>

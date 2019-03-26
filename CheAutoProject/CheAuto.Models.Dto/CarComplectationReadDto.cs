@@ -5,7 +5,7 @@ using CheAuto.Models.Enums;
 
 namespace CheAuto.Models.Dto
 {
-    public class CarComplectationDto : NamedDto
+    public class CarComplectationReadDto : NamedDto
     {
         public int Price { get; set; }
         public DriveType DriveType { get; set; }

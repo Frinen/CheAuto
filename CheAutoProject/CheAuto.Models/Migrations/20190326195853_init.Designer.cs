@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CheAuto.Models.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20190319140059_init")]
+    [Migration("20190326195853_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,7 +54,7 @@ namespace CheAuto.Models.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BodyType");
+                    b.ToTable("BodyTypes");
                 });
 
             modelBuilder.Entity("CheAuto.Models.Schema.CarComplectation", b =>
@@ -80,7 +80,7 @@ namespace CheAuto.Models.Migrations
 
                     b.HasIndex("EngineId");
 
-                    b.ToTable("CaeComplectations");
+                    b.ToTable("CarComplectations");
                 });
 
             modelBuilder.Entity("CheAuto.Models.Schema.CarManufacturer", b =>

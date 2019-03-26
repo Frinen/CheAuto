@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Web", "CheAuto\CheA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Models", "CheAuto.Models\CheAuto.Models.csproj", "{5EE5845B-1294-4A76-A53B-58F88FD331C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Services", "CheAuto.Services\CheAuto.Services.csproj", "{95D17713-C302-4BBB-8E7B-F88801BABE15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Services", "CheAuto.Services\CheAuto.Services.csproj", "{95D17713-C302-4BBB-8E7B-F88801BABE15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Models.Dto", "CheAuto.Models.Dto\CheAuto.Models.Dto.csproj", "{C91FD30C-7C74-4C49-829F-52091549E4AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Models.Dto", "CheAuto.Models.Dto\CheAuto.Models.Dto.csproj", "{C91FD30C-7C74-4C49-829F-52091549E4AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Services.Interfaces", "CheAuto.Services.Interfaces\CheAuto.Services.Interfaces.csproj", "{0B3E0C7B-B9D1-4E99-8474-2ED343206657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Services.Interfaces", "CheAuto.Services.Interfaces\CheAuto.Services.Interfaces.csproj", "{0B3E0C7B-B9D1-4E99-8474-2ED343206657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Config", "CheAuto.Config\CheAuto.Config.csproj", "{40F351CD-2934-4AAB-87F6-A55A3F982990}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheAuto.Config", "CheAuto.Config\CheAuto.Config.csproj", "{40F351CD-2934-4AAB-87F6-A55A3F982990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheAuto.Common", "CheAuto.Common\CheAuto.Common.csproj", "{564797E7-7946-410D-8BA9-285D3E7C51E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{40F351CD-2934-4AAB-87F6-A55A3F982990}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F351CD-2934-4AAB-87F6-A55A3F982990}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F351CD-2934-4AAB-87F6-A55A3F982990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564797E7-7946-410D-8BA9-285D3E7C51E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564797E7-7946-410D-8BA9-285D3E7C51E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564797E7-7946-410D-8BA9-285D3E7C51E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564797E7-7946-410D-8BA9-285D3E7C51E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

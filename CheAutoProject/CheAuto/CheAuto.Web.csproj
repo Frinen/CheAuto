@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CheAuto.Common\CheAuto.Common.csproj" />
     <ProjectReference Include="..\CheAuto.Config\CheAuto.Config.csproj" />
     <ProjectReference Include="..\CheAuto.Models\CheAuto.Models.csproj" />
     <ProjectReference Include="..\CheAuto.Services.Interfaces\CheAuto.Services.Interfaces.csproj" />

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CheAuto.Common\CheAuto.Common.csproj" />
     <ProjectReference Include="..\CheAuto.Services.Interfaces\CheAuto.Services.Interfaces.csproj" />
     <ProjectReference Include="..\CheAuto.Services\CheAuto.Services.csproj" />
   </ItemGroup>

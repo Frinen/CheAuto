@@ -23,7 +23,7 @@ namespace CheAuto.Models.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BodyType",
+                name: "BodyTypes",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -31,7 +31,7 @@ namespace CheAuto.Models.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BodyType", x => x.Id);
+                    table.PrimaryKey("PK_BodyTypes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -152,7 +152,7 @@ namespace CheAuto.Models.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CaeComplectations",
+                name: "CarComplectations",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -160,15 +160,15 @@ namespace CheAuto.Models.Migrations
                     Price = table.Column<int>(nullable: false),
                     DriveType = table.Column<int>(nullable: false),
                     Interior = table.Column<string>(nullable: true),
-                    PassangerCount = table.Column<int>(nullable: false),
+                    PassengerCount = table.Column<int>(nullable: false),
                     LoadCapacity = table.Column<double>(nullable: false),
                     EngineId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CaeComplectations", x => x.Id);
+                    table.PrimaryKey("PK_CarComplectations", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CaeComplectations_Engines_EngineId",
+                        name: "FK_CarComplectations_Engines_EngineId",
                         column: x => x.EngineId,
                         principalTable: "Engines",
                         principalColumn: "Id",
@@ -274,15 +274,15 @@ namespace CheAuto.Models.Migrations
                 {
                     table.PrimaryKey("PK_CarModels", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_CarModels_BodyType_BodyTypeId",
+                        name: "FK_CarModels_BodyTypes_BodyTypeId",
                         column: x => x.BodyTypeId,
-                        principalTable: "BodyType",
+                        principalTable: "BodyTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CarModels_CaeComplectations_CarComplectationId",
+                        name: "FK_CarModels_CarComplectations_CarComplectationId",
                         column: x => x.CarComplectationId,
-                        principalTable: "CaeComplectations",
+                        principalTable: "CarComplectations",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -401,8 +401,8 @@ namespace CheAuto.Models.Migrations
                 column: "DealerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_CaeComplectations_EngineId",
-                table: "CaeComplectations",
+                name: "IX_CarComplectations_EngineId",
+                table: "CarComplectations",
                 column: "EngineId");
 
             migrationBuilder.CreateIndex(
@@ -472,10 +472,10 @@ namespace CheAuto.Models.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "BodyType");
+                name: "BodyTypes");
 
             migrationBuilder.DropTable(
-                name: "CaeComplectations");
+                name: "CarComplectations");
 
             migrationBuilder.DropTable(
                 name: "CarManufacturers");

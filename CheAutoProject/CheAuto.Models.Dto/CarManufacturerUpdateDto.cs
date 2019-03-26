@@ -1,7 +1,9 @@
-﻿namespace CheAuto.Models.Dto
+﻿using System;
+
+namespace CheAuto.Models.Dto
 {
     public class CarManufacturerUpdateDto : NamedDto
     {
-        public CountryDto Country { get; set; }
+        public Guid CountryId { get; set; }
     }
 }

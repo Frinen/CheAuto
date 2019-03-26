@@ -1,4 +1,5 @@
-﻿using CheAuto.Config;
+﻿using CheAuto.Common;
+using CheAuto.Config;
 using CheAuto.Models;
 using CheAuto.Services;
 using Microsoft.AspNetCore.Builder;
@@ -46,7 +47,7 @@ namespace CheAuto
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seeder seeder)
         {
             if (env.IsDevelopment())
             {
@@ -73,6 +74,7 @@ namespace CheAuto
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            seeder.Seed().Wait();
         }
     }
 }

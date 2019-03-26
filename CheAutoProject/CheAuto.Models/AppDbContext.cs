@@ -15,8 +15,8 @@ namespace CheAuto.Models
         
         public DbSet<Country> Countries{ get; set; }
         public DbSet<AvailableCar> AvailableCars { get; set; }
-        public BodyType BodyTypes { get; set; }
-        public DbSet<CarComplectation> CaeComplectations{ get; set; }
+        public DbSet<BodyType> BodyTypes { get; set; }
+        public DbSet<CarComplectation> CarComplectations{ get; set; }
         public DbSet<CarManufacturer> CarManufacturers { get; set; }
         public DbSet<CarModel> CarModels { get; set; }
         public DbSet<Dealer> Dealers { get; set; }

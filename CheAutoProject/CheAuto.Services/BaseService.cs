@@ -17,7 +17,7 @@ namespace CheAuto.Services
         {
             Context = context;
         }
-        public TUpdateDto Create(TUpdateDto model)
+        public virtual TUpdateDto Create(TUpdateDto model)
         {
             var dbModel = Mapper.Map<TUpdateDto, T>(model);
             Context.Set<T>().Add(dbModel);
@@ -26,7 +26,7 @@ namespace CheAuto.Services
             return model;
         }
 
-        public TUpdateDto Update(Guid id, TUpdateDto model)
+        public virtual TUpdateDto Update(Guid id, TUpdateDto model)
         {
             var oldDbModel = Context.Set<T>().Find(id);
             Context.Set<T>().Remove(oldDbModel);
@@ -38,14 +38,14 @@ namespace CheAuto.Services
 
         public abstract List<TReadDto> GetList();
 
-        public TReadDto GetById(Guid id)
+        public virtual TReadDto GetById(Guid id)
         {
             var dbModel = Context.Set<T>().Find(id);
             var result = Mapper.Map<T, TReadDto>(dbModel);
             return result;
         }
 
-        public void Delete(Guid id)
+        public virtual void Delete(Guid id)
         {
             var dbModel = Context.Set<T>().Find(id);
             Context.Set<T>().Remove(dbModel);

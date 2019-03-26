@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using CheAuto.Models;
 using CheAuto.Models.Dto;
@@ -16,7 +17,13 @@ namespace CheAuto.Services
 
         public override List<BodyTypeDto> GetList()
         {
-            throw new NotImplementedException();
+            var result = Context.BodyTypes.Where(x => x.Id != null).Select(x => new BodyTypeDto
+            {
+                Id = x.Id,
+                Name = x.Name
+            }).ToList();
+
+            return result;
         }
     }
 }

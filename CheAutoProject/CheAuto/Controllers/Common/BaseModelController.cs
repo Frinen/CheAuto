@@ -1,4 +1,5 @@
 ﻿using System;
+using CheAuto.Models;
 using CheAuto.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebSockets;
@@ -8,11 +9,17 @@ namespace CheAuto.Controllers.Common
     public class BaseModelController<TService, TReadDto, TUpdateDto> : BaseController where TService : IBaseService<TReadDto, TUpdateDto>
     {
         protected TService _service;
-
-        [HttpGet("{id}")]
-        public IActionResult Get(Guid Id)
+        [HttpGet]
+        public IActionResult Get()
         {
-            var result = _service.GetById(Id);
+            var result = _service.GetList();
+            return Ok(result);
+        }
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult Get(Guid id)
+        {
+            var result = _service.GetById(id);
             return Ok(result);
         }
         [HttpPost]

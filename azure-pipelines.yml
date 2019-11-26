@@ -32,3 +32,13 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Publishing App'
+  inputs:
+    command: publish
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: false
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
